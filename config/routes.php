@@ -79,7 +79,7 @@ $app->post('/send-message', function (Request $request, Response $response)
     }
 
     // build the email to send
-    $headers  = "From: {$this->get('settings')['contact']['email']}\r\n";
+    $headers  = "From: {$this->get('settings')['contact']['from']}\r\n";
     $headers .= "Reply-To: {$message['email']}\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
