@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dan The Cheese Man</title>
+    <meta name="description" content="Educating, tasting, sharing, and helping to make cultured dairy products approachable and fun!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="Danthecheeseman Logo" title="Dan The Cheese Man">
+    </div>
+    <div class="motto">
+        Educating, tasting, sharing, and helping to make cultured dairy products approachable and fun!
+    </div>
+</div>
+
+<div class="navigation">
+    <div class="ccp-wrapper">
+        <img class="ccp-small" src="img/ccp-small.png" alt="">
+    </div>
+</div>
+
+<div class="instabox">
+    <div class="content">
+        <h2><a href="https://www.instagram.com/danthecheesemanccp/">Follow Dan on <span>Instagram</span></a></h2>
+        <div class="instapics">
+            <ul>
+                <?php foreach ($media->data as $data) : ?>
+                    <li><a href="<?php echo $data->link ?>"><img src="<?php echo $data->images->standard_resolution->url ?>" alt="<?php echo $data->caption->text ?>"></a></li>
+                <?php endforeach ?>
+            </ul>
+        </div>
+    </div>
+</div>

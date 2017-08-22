@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lucida Calligraphy';
+    src: url('../font/LucidaCalligraphy-Italic.eot');
+    src: url('../font/LucidaCalligraphy-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/LucidaCalligraphy-Italic.woff') format('woff'),
+    url('../font/LucidaCalligraphy-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

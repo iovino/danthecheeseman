@@ -1,0 +1,4 @@
+vendor/
+.rocketeer
+config/config.php
+composer.phar

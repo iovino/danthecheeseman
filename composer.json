@@ -1,0 +1,21 @@
+{
+    "name": "danthecheeseman/website",
+    "description": "Certified Cheese Professional. Educating, tasting, sharing and helping to make cultured dairy products approachable and fun.",
+    "homepage": "http://www.danthecheeseman.com",
+    "require": {
+        "slim/slim": "^3.0",
+        "cosenary/instagram": "v2.3",
+        "slim/php-view": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cheesy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ken Iovino",
+            "email": "keniovino@gmail.com"
+        }
+    ]
+}
